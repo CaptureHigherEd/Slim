@@ -396,7 +396,7 @@ class Uri implements UriInterface
             function ($match) {
                 return rawurlencode($match[0]);
             },
-            $query
+            $query ?? ''
         );
     }
 
@@ -645,7 +645,7 @@ class Uri implements UriInterface
             function ($match) {
                 return rawurlencode($match[0]);
             },
-            $path
+            $path ?? ''
         );
     }
 
@@ -718,7 +718,7 @@ class Uri implements UriInterface
             function ($match) {
                 return rawurlencode($match[0]);
             },
-            $query
+            $query ?? ''
         );
     }
 
